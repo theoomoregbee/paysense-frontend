@@ -1,0 +1,952 @@
+@media(min-width:1400px) and (max-width:1920px) {
+}
+@media(min-width:1200px) and (max-width:1400px) {
+.promo-block .promo-text {
+	padding-right: 20px;
+}
+}
+@media(max-width:1200px) {
+.furniture-large .position-center-center {
+	width: 90%;
+}
+}
+@media(max-width:1024px) {
+}
+@media(min-width:992px) and (max-width:1199px) {
+.in-the-look li {
+	width: 33.3333%;
+}
+header {
+	margin-top: 40px;
+}
+header nav .ownmenu li {
+	padding: 0 10px;
+}
+.in-the-look li .inn-look {
+	padding: 0 10px;
+}
+.popurlar_product .over-item {
+	padding-top: 40%;
+}
+.popurlar_product .details-sec a {
+	letter-spacing: 0px;
+}
+.small-r-items .btn {
+	letter-spacing: 0px;
+}
+.small-r-items .media {
+	width: 100%;
+	float: left;
+	padding-right: 15px;
+	position: relative;
+	z-index: 2;
+	margin-bottom: 20px;
+}
+.small-r-items h5 {
+	width: 100%;
+	margin-top: 30px;
+	text-align: center;
+}
+.small-r-items .item-img {
+	width: 120px;
+}
+.port-folio-row li .hover-port {
+	padding-top: 10%;
+}
+.furniture .items-fer li {
+	width: 33.3333%;
+}
+header .search-nav ul.dropdown {
+	width: 100% !important;
+}
+.header-style-2.header-style-3 .logo {
+	margin: 20px 0;
+	width: 100%;
+	text-align: center;
+}
+.header-style-2.header-style-3 nav {
+	margin-top: 20px;
+}
+.header-style-2.header-style-3 nav {
+	width: 100%;
+}
+.promo-block .promo-text {
+	padding-right: 20px;
+}
+.contact.style-2 .contact-right {
+	padding-right: 15px;
+	padding-left: 15px !important;
+}
+}
+@media(min-width:768px) and (max-width:991px) {
+.in-the-look li {
+	width: 50%;
+}
+header .logo {
+	width: 100%;
+	position: relative;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.ownmenu {
+	width: 100%;
+}
+header {
+	margin-top: 2px;
+}
+.ownmenu ul.dropdown, .ownmenu ul.dropdown li ul.dropdown {
+	width: 250px !important;
+}
+.ownmenu ul.dropdown, .ownmenu ul.dropdown li ul.dropdown {
+	padding: 20px;
+}
+header .ownmenu ul.dropdown {
+	padding: 20px;
+}
+header nav .ownmenu li {
+	padding: 0 10px;
+}
+.popurlar_product .details-sec a {
+	letter-spacing: 0px;
+}
+.popurlar_product li {
+	width: 50%;
+}
+.list-style li {
+	width: 100%;
+}
+.small-r-items .media {
+	width: 50%;
+	float: left;
+	padding-right: 15px;
+	position: relative;
+	z-index: 2;
+}
+.small-r-items h5 {
+	width: 100%;
+	margin-top: 30px;
+	text-align: center;
+}
+.small-r-items .item-img {
+	width: 120px;
+}
+.port-folio-row li {
+	width: 50%;
+}
+.furniture .items-fer li {
+	width: 33.3333%;
+}
+header nav .ownmenu li {
+	float: left;
+}
+header .search-nav ul.dropdown {
+	width: 100% !important;
+}
+header .ownmenu .look-book .nav-img {
+	width: 70px;
+	margin-right: 10px;
+}
+header .ownmenu .look-book .media-heading {
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+header .ownmenu li > .megamenu li a {
+	padding: 5px 0
+}
+header .ownmenu .look-book p {
+}
+header .ownmenu > li > .megamenu.full-width {
+	padding: 30px;
+}
+header .ownmenu .look-book .media-body a {
+	padding: 5px 0 0 0px;
+}
+header .ownmenu ul.dropdown li{
+	
+}
+header .ownmenu > li > .megamenu.full-width .nav-post .col-sm-3 {
+	width: 50%;
+}
+header .ownmenu .megamenu h6 {
+	margin-top: 20px;
+}
+header .ownmenu ul.dropdown li a {
+	letter-spacing: 1px;
+}
+.ownmenu ul.dropdown, .ownmenu ul.dropdown li ul.dropdown {
+	width: 200px;
+}
+.ownmenu ul.dropdown li a {
+	padding-left: 20px;
+}
+header .ownmenu .look-book .media {
+	padding-bottom: 10px;
+}
+.header-style-2.header-style-3 .logo {
+	margin: 20px 0;
+	width: 100%;
+	text-align: center;
+}
+.header-style-2.header-style-3 nav {
+	margin-top: 20px;
+}
+.header-style-2.header-style-3 nav {
+	width: 100%;
+}
+.col-4 .portfolio-item {
+	width: 50%;
+}
+.testimonial .testi {
+	width: 100%;
+}
+.testimonial .flex-direction-nav {
+	display: none;
+}
+.promo-block .promo-text {
+	padding-right: 20px;
+}
+.process-style-3 li {
+	width: 50%;
+	margin-bottom: 60px;
+}
+.process-style-3 li:before {
+	top: 120%;
+}
+.process-style-3 .icon:before {
+	height: 20px;
+}
+.contact.style-2 .contact-right {
+	padding-right: 15px;
+	padding-left: 15px !important;
+}
+.services-mission .icon-box.ib-style-3 {
+	display: inline-block;
+	width: 100%;
+}
+}
+@media(max-width:767px) {
+.ownmenu {
+	width: 100%;
+	background:#fff;
+}
+.ownmenu > li.showhide span.icon {
+	padding: 0px;
+	margin: 0px;
+}
+header nav .ownmenu li ul.dropdown li{
+	padding:0px !important; 
+}
+header nav li a {
+}
+header.header-2 nav {
+	padding-top: 0px;
+	text-align: left;
+	background: #fff;
+}
+header {
+	margin-top: 0px;
+	padding-top: 20px;
+	background: rgba(0,0,0,0.8);
+}
+.is-sticky .sticky {
+	position: relative !important;
+}
+header .logo {
+	position: relative;
+	width: 100%;
+	text-align: left;
+}
+.sticky .container{
+	position:relative;
+}
+.any-help{
+	position:absolute;
+	right:0px;
+	top:0px;
+	z-index:9999;
+}
+header nav {
+	float: none;
+	width: 100%;
+}
+header nav .ownmenu .indicator {
+	display: block;
+}
+header nav li a {
+	display: inline-block;
+	width: 100%;
+	float: none;
+}
+header nav li a:after{
+	bottom:-8px;
+}
+header .nav-img {
+	display: none !important;
+}
+.ownmenu > li.showhide span {
+	line-height: 50px;
+	display: inline-block;
+	width: 100%;
+}
+.ownmenu > li.showhide {
+	text-align: center;
+	color: #fff;
+	font-size: 20px;
+}
+.ownmenu > li.showhide span.title {
+	margin: 0px;
+}
+.ownmenu > li{
+	line-height:40px;
+}
+.ownmenu > li > a {
+	padding: 6px 0;
+	text-align: left;
+}
+.ownmenu .indicator {
+	display: block;
+}
+header .ownmenu ul.dropdown {
+}
+header .ownmenu > li.shop-cart {
+}
+header .ownmenu > li.shop-cart a {
+	display: none;
+}
+header .ownmenu > li.shop-cart .numb {
+	display: none;
+}
+header nav .ownmenu li.search-nav a {
+	display: none;
+}
+.welcome .margin-top-70{
+	margin-top:20px !important;
+}
+.heading-block span{
+	width:100%;
+}
+.welcome li {
+	margin-bottom:30px !important;
+}
+.collection-adds li {
+	width: 50%;
+	float: left;
+	margin-bottom: 30px;
+}
+.add_block_2 li {
+	margin-bottom: 30px
+}
+.education .time-line .row:before{
+	right:auto;
+}
+.education .time-line .row.second:before{
+	left:auto;
+	right:0px;
+}
+.education .time-line .padding-left-100{
+	padding-left:150px !important;
+}
+.education .time-line .padding-right-100{
+	padding-right:150px !important;
+}
+.education .time-line:before, .education .time-line:after{
+	display:none;
+}
+.why-choose ul{
+	width:100%;
+}
+.testimonial .item{
+	width:100%;
+	padding:0 20px;
+}
+.blog-posts .info {
+	margin-bottom: 30px;
+}
+footer .f-links {
+}
+footer .footer-link h5 {
+	margin-bottom: 0px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+p.intro-small {
+	width: 100%;
+}
+.subcribe h4 {
+	width: 100%;
+	margin-bottom: 20px;
+}
+.subcribe {
+	text-align: center;
+}
+.subcribe .col-md-7 {
+	width: 100%;
+}
+.new-arrival .popurlar_product li {
+	width: 50%;
+	float: left;
+}
+.new-arrival .popurlar_product .over-item {
+	padding-top: 45%;
+}
+.in-the-look li {
+	width: 50%;
+}
+#contact_form li {
+	margin-bottom: 10px;
+}
+.our-clients p.intro {
+	width: 100%;
+}
+.services li .icon {
+	margin-bottom: 10px;
+}
+.services li {
+	margin-bottom: 30px;
+}
+.popurlar_product .items-in:hover .over-item a {
+}
+.small-r-items .btn {
+	letter-spacing: 0px;
+}
+.small-r-items .media {
+	width: 50%;
+	float: left;
+	display: inline-block;
+	padding-right: 15px;
+	position: relative;
+	z-index: 2;
+	margin-bottom: 20px;
+}
+.small-r-items h5 {
+	width: 100%;
+	margin-top: 30px;
+	text-align: center;
+}
+.small-r-items .item-img {
+	width: 120px;
+}
+.shades .tittle p {
+	width: 100%;
+}
+.port-folio-row li {
+	width: 50%;
+	float: left;
+	display: inline-block;
+}
+.port-folio-row li .hover-port {
+	padding-top: 18%;
+}
+.news-letter .news-letter-form {
+	width: 100%;
+}
+.testimonial-simple .media {
+	margin-bottom: 30px;
+}
+.construction .services-style-2 ul li {
+	width: 50%;
+	float: left;
+}
+.tittle-cont p {
+	width: 100%;
+}
+.team ul li {
+	margin-bottom: 30px;
+}
+.latest-news .read-more {
+	margin-bottom: 30px;
+}
+.testimonial .testi {
+	width: 100%;
+}
+.testimonial .owl-nav .owl-prev {
+	top: 10%;
+}
+.testimonial .owl-nav .owl-next {
+	top: 10%;
+}
+.quote {
+	text-align: center;
+}
+.quote h4 {
+	width: 100%;
+	text-align: center;
+	line-height: 30px;
+}
+.quote .btn {
+	margin-top: 20px;
+	float: none;
+}
+.portfolio .col-3 li {
+	width: 100%;
+	margin-bottom: 30px;
+}
+.construction .filter li {
+	padding: 0px 10px;
+}
+.construction .filter li a {
+	font-size: 12px;
+	padding: 0px;
+}
+.furniture .items-fer li {
+	width: 50%;
+}
+.list-style li .col-sm-4 {
+	width: 50%;
+	float: left;
+}
+.list-style li .col-sm-8 {
+	width: 50%;
+	float: left;
+}
+.header-style-2.header-style-3 .logo {
+	width: 100%;
+	display: inline-block;
+}
+.header-style-2.header-style-3 nav {
+	width: 100%;
+	float: none;
+}
+.header-style-2.header-style-3 nav {
+	margin-top: 10px;
+}
+.header-style-2.header-style-3 nav li {
+	float: none;
+}
+.header-style-2.header-style-3 nav li.showhide {
+	float: right;
+}
+.header-style-2.header-style-3 .search-nav ul.dropdown {
+	width: 320px !important;
+}
+.col-4 .portfolio-item {
+	width: 50%;
+}
+.testimonial .flex-control-thumbs li {
+	height: 110px;
+	width: 110px;
+	margin: 0px;
+}
+.testimonial .flex-direction-nav {
+	display: none;
+}
+.testimonial .slides {
+	margin-top: 130px;
+}
+.posts-list.list-style-1 .entry-body {
+	padding: 20px;
+}
+.welcome .icon-box.ib-style-1 {
+	margin-bottom: 10px;
+}
+.section-parthner ul {
+	display: inline-block;
+	width: 100%;
+}
+.section-parthner ul li {
+	width: 50%;
+	float: left;
+}
+header.coporate-header {
+	background: #fff;
+}
+header.coporate-header .ownmenu > li.showhide span.icon {
+	color: #141414;
+}
+header .is-sticky .sticky {
+	padding: 0px;
+}
+header nav li a:after{
+	bottom:0px;
+}
+header.coporate-header .ownmenu ul.dropdown {
+	background: rgba(0,0,0,0.05);
+	    float: left;
+}
+.price-plan article{
+	margin-bottom:30px;
+}
+.news-letter{
+	width:100%;
+}
+footer h5{
+	margin-top:50px;
+	margin-bottom:20px;
+}
+header.coporate-header .is-sticky .sticky {
+	position: relative !important;
+}
+header .ownmenu ul.dropdown li a{
+	padding:0px 0;
+	line-height:26px;
+}
+header nav .ownmenu li{
+	padding:0 30px;
+}
+header.dark-text {
+	background: rgba(255,255,255,0.9);
+}
+header.dark-text .ownmenu > li.showhide span.icon {
+	color: #141414;
+}
+.services-coporate li i {
+	margin: 0 auto;
+	display: block;
+}
+.services-coporate li {
+	margin-bottom: 30px;
+}
+.promo-block .promo-text {
+	padding-right: 20px;
+}
+.process-style-3 li {
+	width: 50%;
+	margin-bottom: 60px;
+}
+.process-style-3 li:before {
+	top: 120%;
+}
+.process-style-3 .icon:before {
+	height: 20px;
+}
+.heading-block.style-6 span {
+	width: 100%;
+}
+.blog .blog-post {
+	margin-bottom: 30px;
+}
+.pricing .pricing-table.style-3 .price:before {
+	display: none;
+}
+.contact-right.padding-left-30 {
+	padding-left: 0px !important;
+}
+.responsive-img {
+	width: 100%;
+}
+.passion h6 {
+	margin-top: 20px !important;
+}
+.parthners .col-5 li {
+	width: 50%;
+	margin-bottom: 10px;
+}
+.intro-5 {
+	text-align: center;
+}
+.core-inn {
+	background: none;
+}
+.team.style-3 li {
+	width: 50%;
+	float: left;
+}
+.team.style-3 ul .hover-social {
+	text-align: center;
+}
+.team.style-3 ul .hover-social li {
+	width: auto;
+	float: none;
+	display: inline-block;
+}
+.app-image {
+	display: none;
+}
+.contact.style-2 .contact-right {
+	padding-right: 15px;
+	padding-left: 15px !important;
+}
+.heading-block.style-4 {
+	width: 100%;
+}
+.clients.text-center li {
+	margin-bottom: 20px;
+}
+.heading-block.style-5 p {
+	width: 100%;
+}
+.portfolio.port-wrap .container-fluid .padding-left-50.padding-right-50 {
+	padding: 0px !important;
+}
+.simple-ser li {
+	margin-bottom: 30px;
+}
+.services-mission .icon-box.ib-style-3 {
+	display: inline-block;
+	width: 100%;
+}
+.col-3 .portfolio-item {
+	width: 50%;
+}
+.explore-tabs .nav-pills li{
+	width:50%;
+}
+.expert-team li {
+	margin-bottom:30px;
+}
+.top-bar ul li{
+	text-align:center;
+	margin-bottom:10px;
+}
+.work-process .into-type{
+	width:100%;
+}
+.top-bar .social-top ul li{
+	text-align:center;
+}
+.text-right.social-top{
+	text-align:center !important;
+}
+.intro.style-6 {
+	text-align: center;
+}
+.intro.style-6 .heading-block {
+	margin-top: 20px;
+}
+.promo.light {
+	text-align: center;
+}
+.promo.light h4 {
+	width: 100%;
+	margin-bottom: 30px;
+}
+.promo a.btn {
+	float: none;
+}
+.team.style-2 .team-small li {
+	margin-bottom: 0px;
+	width: 33.3333%;
+}
+.team.style-2 .team-small li img {
+	width: 100%;
+}
+.process .process-style-1 li {
+	width: 50%;
+	margin-bottom: 30px;
+}
+.passion .text-style-2 {
+}
+.pricing.style-2 .icon {
+	top: -50px;
+}
+.shop-bnr article {
+	margin-bottom: 30px;
+}
+.shop-bnr img {
+	width: 100%;
+}
+.popurlar_product .row li {
+	width: 50%;
+	float: left;
+}
+header .ownmenu > li > .megamenu.full-width .col-sm-3 {
+	width: 100%;
+	float: none;
+	margin-bottom: 30px;
+	display: inline-block;
+}
+header .ownmenu li > .megamenu li a {
+	line-height: 32px;
+}
+.ownmenu li {
+	float: none;
+}
+header .ownmenu ul.dropdown li a {
+	padding-left: 0px !important;
+}
+.social-icons-large li {
+	width: 25%;
+	float: left;
+}
+.team.style-6 ul li {
+	width: 50%;
+	float: left;
+}
+.team.style-6 .team-image .social-icons {
+	display: inline-block;
+	width: 100%;
+}
+.team.style-6 .team-image .social-icons li {
+	width: auto;
+	float: none;
+	display: inline-block;
+	margin-bottom: 0px;
+	display: inline-block;
+	text-align: center;
+}
+header .ownmenu > li > .megamenu.full-width {
+	padding: 20px;
+}
+header .ownmenu ul.dropdown {
+	padding: 10px 30px;
+}
+.ownmenu > li > ul.dropdown > li > ul.dropdown > li > a {
+	padding-left: 0px !important;
+}
+.ownmenu ul.dropdown, .ownmenu ul.dropdown li ul.dropdown {
+	padding: 10px 30px;
+}
+header nav li a:after {
+	height: 1px;
+}
+.ownmenu ul.dropdown, .ownmenu ul.dropdown li ul.dropdown {
+	float: left;
+	width: 100%;
+}
+.process .process-style-2 li {
+	width: 50%;
+	margin-bottom: 30px;
+}
+#cd-menu-trigger{
+	left:130px;
+	top:30px;
+}
+}
+ @media (max-width:640px) {
+.seasonals ul li {
+	width: 100%;
+}
+.construction .services-style-2 ul li {
+	width: 100%;
+	margin-top: 20px;
+}
+.top-bar {
+	height: auto;
+}
+header .language {
+	width: 100%;
+	display: inline-block;
+	text-align: left;
+}
+.top-links {
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+.top-links li {
+	float: none;
+	display: inline-block;
+}
+.top-links ul {
+	width: 100%;
+}
+.top-links .social_icons {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: auto;
+}
+.social-icons-large li {
+	width: 50%;
+	float: left;
+	margin-bottom: 30px;
+}
+}
+@media(max-width:540px) {
+.small-r-items .media {
+	width: 100%;
+}
+.small-r-items .item-img {
+	width: 150px;
+}
+.port-folio-row li {
+	width: 100%;
+	float: left;
+	display: inline-block;
+}
+.news-letter .news-letter-form {
+	width: 100%;
+}
+.subcribe .sub-mail button {
+	margin: 0px;
+	width: 200px;
+	margin: 0 auto;
+	float: none;
+	height: 50px;
+	margin-top: 10px;
+	padding: 10px 0px;
+	border: 1px solid rgba(255,255,255,0.6);
+}
+.furniture .items-fer li {
+	width: 100%;
+}
+.list-style li .col-sm-4 {
+	width: 100%;
+	float: left;
+}
+.list-style li .col-sm-8 {
+	width: 100%;
+	float: left;
+}
+.list-style .details-sec a {
+	margin-top: 20px;
+}
+.col-4 .portfolio-item {
+	width: 100%;
+}
+.posts-list.list-style-1 .entry-image {
+	width: 100%;
+	left: auto;
+	right: auto
+}
+.posts-list.list-style-1 .entry-body {
+	width: 100%;
+	left: auto;
+	right: auto
+}
+.posts-list.list-style-1 .entry-image-right .entry-image {
+	width: 100%;
+	left: auto;
+	right: auto
+}
+.posts-list.list-style-1 .entry-image-right .entry-body {
+	width: 100%;
+	left: auto;
+	right: auto
+}
+.col-3 .portfolio-item {
+	width: 100%;
+}
+.popurlar_product .row li {
+	width: 50%;
+	float: left;
+}
+.process-style-3 li {
+	width: 100%;
+}
+.process .process-style-1 li {
+	width: 100%;
+}
+.process .process-style-2 li {
+	width: 100%;
+}
+.social-icons-large li {
+	width: 50%;
+	float: left;
+	margin-bottom: 30px;
+}
+}
+@media(max-width:440px) {
+.contact-info li {
+	width: 100%;
+}
+.team.style-6 ul li {
+	width: 100%;
+	float: left;
+}
+.shop-page .items li.col-sm-4 {
+	width: 100%;
+}
+.new-arrival .popurlar_product li {
+	width: 100%;
+}
+.in-the-look li {
+	width: 100%;
+}
+.popurlar_product .row li {
+	width: 100%;
+	float: left;
+}
+}
+@media(max-width:320px) {
+}

@@ -1,0 +1,145 @@
+.panel-body {
+    padding: 0;
+}
+.panel-title {
+    height: 30px;
+    font-size: 30px;
+}
+.panel-heading {
+    padding: 20px 16px;
+}
+.panel-default>.panel-heading {
+    background-color: #034679;
+    color: #f07d00;
+}
+
+.btn-rounded {
+    padding: 12px 15px;
+    border-radius: 50%;
+    min-width: 50px;
+    min-height: 50px;
+}
+.btn i {
+    font-size: 23px;
+}
+.btn-group-sm>.btn, .btn-sm {
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    margin-right: 5px;
+    border-radius: 3px;
+}
+
+
+.chat_window {
+    background-image: url("../images/wallpaper.png");
+    overflow: hidden;
+}
+
+.messages {
+    position: relative;
+    list-style: none;
+    padding: 20px 10px 0 10px;
+    margin: 0;
+    height: 347px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.messages .message {
+    clear: both;
+    overflow: hidden;
+    margin-bottom: 20px;
+    transition: all 0.5s linear;
+    opacity: 0;
+}
+.messages .message.left .avatar {
+    background: url("../images/ceofintech.png");
+    background-size: 60px 60px;
+    background-repeat: no-repeat;
+    float: left;
+}
+.messages .message.left .text_wrapper {
+    background-color: #f3ae63;
+    margin-left: 75px;
+}
+.messages .message.left .text_wrapper::after, .messages .message.left .text_wrapper::before {
+    right: 100%;
+    border-right-color: #f3ae63;
+}
+.messages .message.left .text {
+    color: #ffffff;
+}
+.messages .message.right .avatar {
+    background-color: #fdbf68;
+    float: right;
+}
+.messages .message.right .text_wrapper {
+    background-color: #648dab;
+    margin-right: 20px;
+    float: right;
+}
+.messages .message.right .text_wrapper::after, .messages .message.right .text_wrapper::before {
+    left: 100%;
+    border-left-color: #648dab;
+}
+.messages .message.right .text {
+    color: #ffffff;
+}
+.messages .message.appeared {
+    opacity: 1;
+}
+.messages .message .avatar {
+    width: 60px;
+    height: 60px;
+    /*border-radius: 50%;*/
+    display: inline-block;
+}
+.messages .message .text_wrapper {
+    padding: 20px;
+    border-radius: 6px;
+    position: relative;
+}
+.messages .message .text_wrapper::after, .messages .message .text_wrapper:before {
+    top: 18px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+.messages .message .text_wrapper::after {
+    border-width: 13px;
+    margin-top: 0px;
+}
+.messages .message .text_wrapper::before {
+    border-width: 15px;
+    margin-top: -2px;
+}
+.messages .message .text_wrapper .text {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+/* Modal */
+
+body.modal-open #wrap{
+    -webkit-filter: blur(7px);
+    -moz-filter: blur(15px);
+    -o-filter: blur(15px);
+    -ms-filter: blur(15px);
+    filter: blur(15px);
+}
+
+.modal-backdrop {background: #f7f7f7;}
+
+.popover-content {
+    padding: 0;
+}
+.popover.top {
+    margin-left: 65px;
+}
+.popover.top>.arrow {
+    margin-left: -80px;
+}
+
