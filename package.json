@@ -1,0 +1,45 @@
+{
+  "name": "secondary-school",
+  "version": "1.0.0",
+  "description": "This helps us to manage secondary school activities",
+  "main": "scripts/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "wiredep": "wiredep --verbose --bowerJson bower.json --src index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://theo4u@bitbucket.org/ziippii/secondary-school-front.git"
+  },
+  "keywords": [
+    "secondary",
+    "school"
+  ],
+  "author": "Theophilus Omoregbee <theo4u@ymail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "bower": "^1.7.9",
+    "del": "^2.2.2",
+    "express": "^4.14.1",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-if": "^2.0.1",
+    "gulp-uglify": "^2.0.0",
+    "gulp-useref": "^3.1.2",
+    "gzippo": "^0.2.0",
+    "morgan": "^1.7.0"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.6.1",
+    "gulp": "git+https://git@github.com/gulpjs/gulp.git#4.0",
+    "gulp-jshint": "^2.0.2",
+    "gulp-webserver": "^0.9.1",
+    "jasmine-core": "^2.5.2",
+    "jshint": "^2.9.4",
+    "karma": "^1.3.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-ng-html2js-preprocessor": "^1.0.0",
+    "wiredep": "^4.0.0"
+  }
+}
