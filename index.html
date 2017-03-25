@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="en" ng-app="paysense">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
@@ -36,10 +36,10 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+<body ng-controller="MainController as mainCtrl">
 
 <!-- LOADER -->
-<div id="loader">
+<div id="loader" ng-hide="mainCtrl.loader">
     <div class="loader">
         <div class="position-center-center"><img src="images/logo.png" alt="">
             <div class="progress">
@@ -58,78 +58,45 @@
         <section class="welcome light-gray-bg padding-top-20 padding-bottom-80">
             <div style="width: 90%; margin: auto" class="panel panel-default">
                 <div class="panel-heading">
-                    <h3 class="panel-title text-center"><img style="margin-top: -5px;" class="small-r-items item-img" src="images/paysense-logo.png"><a style="margin-top: -10px" href="#"  data-toggle="modal" data-target="#myModal"
-                                                                             class="pull-right btn btn-yellow btn-rounded waves-effect waves-ripple"><i
-                           style="color: #034679;" class="fa fa-question"></i></a></h3>
+                    <h3 class="panel-title text-center"><img style="margin-top: -5px;" class="small-r-items item-img"
+                                                             src="images/paysense-logo.png"><a style="margin-top: -10px"
+                                                                                               href="#"
+                                                                                               data-toggle="modal"
+                                                                                               data-target="#myModal"
+                                                                                               class="pull-right btn btn-yellow btn-rounded waves-effect waves-ripple"><i
+                            style="color: #034679;" class="fa fa-question"></i></a></h3>
                 </div>
                 <div class="chat_window panel-body">
-                    <ul class="messages">
-                        <li class="message left appeared">
-                            <div class="avatar"></div>
-                            <div class="text_wrapper">
-                                <div class="text">Hello Philip! :)>Hello Philip! :)>Hello Philip! :)>Hello Philip!
-                                    :)>Hello Philip! :)
+                    <ul class="messages" id="chat-zone">
+
+                        <li class="message  appeared " ng-repeat="message in mainCtrl.chats"
+                            ng-class="[{'left':message.type=='bot'}, {'right':message.type!='bot'}]">
+                            <div class="avatar" ng-if="message.type=='bot'"></div>
+                            <div class="avatar" ng-if="message.type!='bot' && $last && mainCtrl.chat_loader">Loading
+                                here
+                            </div>
+                            <div class="text_wrapper fx-bounce-down fx-dur-600 fx-ease-none">
+                                <div class="text ">{{message.text}}</div>
+                                <div class="text-center">
+                                    <a class="btn btn-sm btn-success waves-effect waves-ripple"
+                                       href="javascript:void(0);" ng-click="mainCtrl.loadMessage(suggestion, true);"
+                                       role="button" ng-repeat="suggestion in message.suggestions">{{suggestion}}</a>
                                 </div>
+
                             </div>
+                            <a id="bottom" ng-if="$last"></a>
                         </li>
-                        <li class="message right appeared">
-                            <div class="text_wrapper">
-                                <div class="text">Hi Sandy! How are you?Hi Sandy! How are you?Hi Sandy! How are you?Hi
-                                    Sandy! How are you?
-                                </div>
-                            </div>
-                        </li>
-                        <li class="message left appeared">
-                            <div class="avatar"></div>
-                            <div class="text_wrapper">
-                                <div class="text">I'm fine, thank you!I'm fine, thank you!</div>
-                                <div class="text-center"><a class="btn btn-sm btn-success waves-effect waves-ripple" href="#" role="button">yes</a><a class="btn btn-sm btn-danger waves-effect waves-ripple" href="#" role="button">no</a><a class="btn btn-sm btn-info waves-effect waves-ripple" href="#" role="button">later...</a></div>
-                            </div>
-                        </li>
-                        <li class="message left appeared">
-                            <div class="avatar"></div>
-                            <div class="text_wrapper">
-                                <div class="text">I'm fine, thank you!I'm fine, thank you!</div>
-                            </div>
-                        </li>
-                        <li class="message left appeared">
-                            <div class="avatar"></div>
-                            <div class="text_wrapper">
-                                <div class="text">I'm fine, thank you!</div>
-                            </div>
-                        </li>
-                        <li class="message left appeared">
-                            <div class="avatar"></div>
-                            <div class="text_wrapper">
-                                <div class="text">I'm fine, thank you!</div>
-                            </div>
-                        </li>
-                        <li class="message left appeared">
-                            <div class="avatar"></div>
-                            <div class="text_wrapper">
-                                <div class="text">I'm fine, thank you!</div>
-                            </div>
-                        </li>
-                        <li class="message right appeared">
-                            <div class="text_wrapper">
-                                <div class="text">Hi Sandy! How are you?</div>
-                            </div>
-                        </li>
-                        <li class="message right appeared">
-                            <div class="text_wrapper">
-                                <div class="text">Hi Sandy! How are you?Hi Sandy!<br> How are you?Hi Sandy! How are
-                                    you?Hi Sandy! How are you?<br>
-                                    Hi Sandy! How are you?
-                                </div>
-                            </div>
-                        </li>
+
                     </ul>
+
                 </div>
                 <div class="panel-footer">
+
                     <div class="">
                         <div class="input-group">
                             <span style="vertical-align: top" class="input-group-btn">
-                            <button type="button" tabindex="0" role="button" data-html="true"  data-toggle="popover" data-placement="top"  data-container="body"
+                            <button type="button" tabindex="0" role="button" data-html="true" data-toggle="popover"
+                                    data-placement="top" data-container="body"
                                     data-content="<div class='shop-side-bar'>
             <div class='head-shop'>
                 <h5>Quick Actions</h5>
@@ -140,12 +107,18 @@
                 <li><a href='#.'>Awesome</a></li>
             </ul>
                         </div> "
-                                    class="btn btn-yellow waves-effect waves-ripple" type="button"><i style="font-size: 16px;" class="fa fa-star"></i> </button>
+                                    class="btn btn-yellow waves-effect waves-ripple" type="button"><i
+                                    style="font-size: 16px;" class="fa fa-star"></i> </button>
                             </span>
-                            <textarea class="form-control" rows="" placeholder="Type your message here ..."></textarea>
-                            <span style="vertical-align: top" class="input-group-btn">
-                            <a href="#" class="btn btn-yellow waves-effect waves-ripple" type="button">Send </a>
+                            <form ng-submit="mainCtrl.loadMessage(text, true); text=''">
+
+                                <span style="vertical-align: top" class="input-group-btn">
+                                     <textarea ng-model="text" class="form-control" rows=""
+                                               placeholder="Type your message here ..."></textarea>
+                            <button type="submit"
+                                    class="btn btn-yellow waves-effect waves-ripple" type="button">Send </button>
                             </span>
+                            </form>
                         </div><!-- /input-group -->
                     </div>
                 </div>
@@ -174,7 +147,8 @@
     <div class="">
         <div class="shop-side-bar">
             <div class="head-shop">
-                <h5>Tips and Tricks <a href="#" data-dismiss="modal" aria-label="Close"class="pull-right"><i class="fa fa-close"></i></a></h5>
+                <h5>Tips and Tricks <a href="#" data-dismiss="modal" aria-label="Close" class="pull-right"><i
+                        class="fa fa-close"></i></a></h5>
             </div>
         </div>
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -188,35 +162,35 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                    <img  class="img-responsive" src="http://placehold.it/1900x1080&text=Slide One">
+                    <img class="img-responsive" src="http://placehold.it/1900x1080&text=Slide One">
                     <div class="carousel-caption">
                         <h3>jb ewjbejfxvvhvewfhefov fvefiff fof xifbif bxqwjf </h3>
                         <p>Hh nf wefwefewf fkwenflmf wefpijw efnwkef ewf pewf</p>
                     </div>
                 </div>
                 <div class="item">
-                    <img  class="img-responsive" src="http://placehold.it/1900x1080&text=Slide One">
+                    <img class="img-responsive" src="http://placehold.it/1900x1080&text=Slide One">
                     <div class="carousel-caption">
                         <h3>jb ewjbejfxvvhvewfhefov fvefiff fof xifbif bxqwjf </h3>
                         <p>Hh nf wefwefewf fkwenflmf wefpijw efnwkef ewf pewf</p>
                     </div>
                 </div>
                 <div class="item">
-                    <img  class="img-responsive" src="http://placehold.it/1900x1080&text=Slide One">
+                    <img class="img-responsive" src="http://placehold.it/1900x1080&text=Slide One">
                     <div class="carousel-caption">
                         <h3>jb ewjbejfxvvhvewfhefov fvefiff fof xifbif bxqwjf </h3>
                         <p>Hh nf wefwefewf fkwenflmf wefpijw efnwkef ewf pewf</p>
                     </div>
                 </div>
                 <div class="item">
-                    <img  class="img-responsive" src="http://placehold.it/1900x1080&text=Slide One">
+                    <img class="img-responsive" src="http://placehold.it/1900x1080&text=Slide One">
                     <div class="carousel-caption">
                         <h3>jb ewjbejfxvvhvewfhefov fvefiff fof xifbif bxqwjf </h3>
                         <p>Hh nf wefwefewf fkwenflmf wefpijw efnwkef ewf pewf</p>
                     </div>
                 </div>
                 <div class="item">
-                    <img  class="img-responsive" src="http://placehold.it/1900x1080&text=Slide One">
+                    <img class="img-responsive" src="http://placehold.it/1900x1080&text=Slide One">
                     <div class="carousel-caption">
                         <h3>jb ewjbejfxvvhvewfhefov fvefiff fof xifbif bxqwjf </h3>
                         <p>Hh nf wefwefewf fkwenflmf wefpijw efnwkef ewf pewf</p>
@@ -249,9 +223,18 @@
 <script src="js/vendors/jquery.isotope.min.js"></script>
 <script src="js/vendors/owl.carousel.min.js"></script>
 
+
 <!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
 <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.tools.min.js"></script>
 <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 <script src="js/main.js"></script>
+
+
+<script src="js/angular.js"></script>
+<script src="js/angular-animate.js"></script>
+<script src="js/TweenMax.min.js"></script>
+<script src="js/ngFx.js"></script>
+<script src="js/myapp.js"></script>
+
 </body>
 </html>

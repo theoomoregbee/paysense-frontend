@@ -1,19 +1,24 @@
 {
-  "name": "secondary-school",
+  "name": "paysense",
   "version": "1.0.0",
-  "description": "This helps us to manage secondary school activities",
+  "description": "This helps us to manage customer activities",
   "main": "scripts/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "wiredep": "wiredep --verbose --bowerJson bower.json --src index.html"
+    "wiredep": "wiredep --verbose --bowerJson bower.json --src index.html",
+    "start":"node web.js"
   },
   "repository": {
     "type": "git",
     "url": "https://theo4u@bitbucket.org/ziippii/secondary-school-front.git"
   },
   "keywords": [
-    "secondary",
-    "school"
+    "ai",
+    "bot",
+    "machine learning",
+    "ibm",
+    "watson",
+    "paysense"
   ],
   "author": "Theophilus Omoregbee <theo4u@ymail.com>",
   "license": "ISC",

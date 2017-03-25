@@ -1,7 +1,7 @@
 /**
  * Created by Theophy on 10/28/16.
  */
- 
+var gulp = require('gulp');
 var webserver = require('gulp-webserver');
  
 var paths = {
@@ -22,4 +22,4 @@ gulp.task('webserver', function () {
 
  
 //serve our file for us
-gulp.task("serve", gulp.parallel('testWatcher', 'webserver', 'watch')); 
+gulp.task("serve", gulp.parallel('webserver'));
