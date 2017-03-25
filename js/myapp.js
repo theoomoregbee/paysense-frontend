@@ -6,10 +6,14 @@
     'use strict';
 
     angular.module("paysense", ["ngAnimate", "ngFx"])
+        .constant("Constants", {
+            endpoint: "http://paysense.mybluemix.net",
+            local_endpoint: "http://localhost:1337"
+        })
         .controller("MainController", MainController);
 
-    MainController.$inject = ["$timeout", "$http", "$location", "$anchorScroll"];
-    function MainController($timeout, $http, $location, $anchorScroll) {
+    MainController.$inject = ["$timeout", "$http", "$location", "$anchorScroll", "Constants"];
+    function MainController($timeout, $http, $location, $anchorScroll, Constants) {
         var vm = this;
         vm.chats = [];
         vm.loader = true;
@@ -48,7 +52,7 @@
             $location.hash('bottom');
 
 
-            $http.get("http://localhost:1337/message/interact?message=" + message).then(function (success) {
+            $http.get(Constants.endpoint + "/message/interact?message=" + message).then(function (success) {
                 console.info("bot response", success);
                 vm.chat_loader = false;
 
