@@ -1,5 +1,11 @@
+declared-services:
 
+  cloudantNoSQLDB-service:
+    label: cloudantNoSQLDB
+    plan: Lite
 applications:
+- services:
+   - cloudantNoSQLDB-service
   name: paysense-frontend
   command: npm start
   path: .
