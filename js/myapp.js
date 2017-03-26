@@ -5,9 +5,9 @@
 (function () {
     'use strict';
 
-    angular.module("paysense", ["ngAnimate", "ngFx"])
+    angular.module("paysense", ["ngAnimate", "ngFx", "ngSanitize"])
         .constant("Constants", {
-            endpoint: "http://paysense.mybluemix.net",
+            endpoint: "https://paysense.mybluemix.net",
             local_endpoint: "http://localhost:1337"
         })
         .controller("MainController", MainController);
