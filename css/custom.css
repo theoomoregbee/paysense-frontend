@@ -1,3 +1,6 @@
+.panel-contained {
+    width: 90%; margin:20px auto;
+}
 .panel-body {
     padding: 0;
 }
@@ -12,7 +15,12 @@
     background-color: #034679;
     color: #f07d00;
 }
-
+.help-icon {
+    margin-top: -10px;
+}
+.shop-side-bar .head-shop {
+    padding: 10px;
+}
 .btn-rounded {
     padding: 12px 15px;
     border-radius: 50%;
@@ -29,7 +37,9 @@
     margin-right: 5px;
     border-radius: 3px;
 }
-
+.form-control {
+    height: 61px;
+}
 
 .chat_window {
     background-image: url("../images/wallpaper.png");
@@ -41,7 +51,7 @@
     list-style: none;
     padding: 20px 10px 0 10px;
     margin: 0;
-    height: 347px;
+    height: 65vh;
     overflow: scroll;
     overflow-x: hidden;
 }
@@ -141,5 +151,36 @@ body.modal-open #wrap{
 }
 .popover.top>.arrow {
     margin-left: -80px;
+}
+
+@media (max-width:640px) {
+    .panel-contained {
+        width: 100%;
+        margin: 0px auto;
+    }
+    .panel-footer {
+        padding: 3px 3px;
+    }
+    .input-group-addon {
+        padding: 3px 4px;
+    }
+    .btn {
+        padding: 7px 10px;
+    }
+    .btn-rounded {
+        padding: 5px 7px;
+        min-width: 35px;
+        min-height: 35px;
+    }
+    .form-control {
+        height: 40px;
+    }
+
+    .img-response {
+        width: 200px;
+    }
+    .help-icon {
+        margin-top: 0px;
+    }
 }
 
