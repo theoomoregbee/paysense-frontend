@@ -182,5 +182,16 @@ body.modal-open #wrap{
     .help-icon {
         margin-top: 0px;
     }
+    .messages .message.left .avatar {
+        margin-top: 10px;
+        background-size: 40px 40px;
+    }
+    .messages .message .avatar {
+        height: 40px;
+        width: 40px;
+    }
+    .messages .message.left .text_wrapper {
+        margin-left: 55px;
+    }
 }
 
