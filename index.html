@@ -58,12 +58,16 @@
         <section class="light-gray-bg">
             <div class="panel panel-default panel-contained">
                 <div class="panel-heading">
-                    <h3 class="panel-title text-center"><img style="margin-top: -5px;" class="img-response"
-                                                             src="images/paysense-logo.png"><a href="#"
-                                                                                               data-toggle="modal"
-                                                                                               data-target="#myModal"
-                                                                                               class="pull-right btn btn-yellow btn-rounded waves-effect waves-ripple help-icon"><i
-                            style="color: #034679;" class="fa fa-question"></i></a></h3>
+                    <h3 class="panel-title text-center">
+
+                        <img style="margin-top: -5px;" class="img-response"
+                             src="images/paysense-logo.png">
+                        <a href="#"
+                           data-toggle="modal"
+                           data-target="#myModal"
+                           class="pull-right btn btn-yellow btn-rounded waves-effect waves-ripple help-icon"><i
+                                style="color: #034679;" class="fa fa-question"></i></a>
+                    </h3>
                 </div>
                 <div class="chat_window panel-body">
                     <ul class="messages" id="chat-zone">
@@ -71,7 +75,9 @@
                         <li class="message  appeared " ng-repeat="message in mainCtrl.chats"
                             ng-class="[{'left':message.type=='bot'}, {'right':message.type!='bot'}]">
                             <div class="avatar" ng-if="message.type=='bot'"></div>
-                            <div class="" ng-if="message.type!='bot' && $last && mainCtrl.chat_loader"><i style="font-size: 23px;margin-top: 10px;" class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+                            <div class="" ng-if="message.type!='bot' && $last && mainCtrl.chat_loader"><i
+                                    style="font-size: 23px;margin-top: 10px;"
+                                    class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
                                 <span class="sr-only">Loading...</span>
                             </div>
                             <div class="text_wrapper fx-bounce-down fx-dur-600 fx-ease-none">
@@ -92,7 +98,7 @@
                 <div class="panel-footer">
 
                     <div class="">
-                        <form ng-submit="mainCtrl.loadMessage(text, true); text=''"  class="input-group">
+                        <form ng-submit="mainCtrl.loadMessage(text, true); text=''" class="input-group">
                             <span style="vertical-align: top" class="input-group-addon">
                             <button type="button" tabindex="0" role="button" data-html="true" data-toggle="popover"
                                     data-placement="top" data-container="body"
@@ -109,7 +115,7 @@
                                     class="btn btn-yellow waves-effect waves-ripple" type="button"><i
                                     style="font-size: 16px;" class="fa fa-star"></i> </button>
                             </span>
-                            <input ng-model="text" class="form-control" placeholder="Type your message here ..." >
+                            <input ng-model="text" class="form-control" placeholder="Type your message here ...">
                             <span style="vertical-align: top" class="input-group-addon">
                             <button type="submit"
                                     class="btn btn-yellow waves-effect waves-ripple" type="button">Send </button>
@@ -121,6 +127,10 @@
         </section>
     </div>
     <!-- End Content -->
+
+    <button class="btn btn-primary" ng-click="mainCtrl.playAudio()">
+        play
+    </button>
 
     <!-- End Footer -->
 </div>
