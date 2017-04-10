@@ -17,6 +17,23 @@
         var vm = this;
         var endpoint = Constants.local_endpoint;
 
+        var audio = new Audio();
+        audio.addEventListener('canplaythrough', function () {
+            console.log("can play through now");
+            audio.play();
+        }, false);
+
+        audio.addEventListener('ended', function () {
+            console.log("Play ended owk oo. Buffered:", audio.buffered);
+        }, false);
+
+        audio.addEventListener('error', function (event) {
+            console.log("Error occurred", event);
+        }, false);
+
+        audio.addEventListener('loadstart', function () {
+            console.log("Just started loading of data");
+        });
 
         vm.chats = [];
         vm.loader = true;
@@ -65,11 +82,15 @@
 
             $http.get(endpoint + "/message/interact?message=" + message + "&text_to_speech=" + vm.settings.text_to_speech).then(function (success) {
                 console.info("bot response", success);
-                vm.chat_loader = false;
-                processChatBotResponse(success);
 
-                if (vm.settings.text_to_speech === true)
+                vm.chat_loader = false;
+                if (vm.settings.text_to_speech === true) {
+                    processChatBotResponse(success);
                     playAudio();
+                }
+                else
+                    processChatBotResponse(success);
+
 
             }, function (failed) {
                 vm.chat_loader = false;
@@ -82,8 +103,8 @@
          * this is used to convert our sample chat bot output to sound
          */
         function playAudio() {
-            var audio = new Audio(endpoint + '/text2speech/audio');
-            audio.play();
+            audio.src = endpoint + '/text2speech/audio';
+            audio.load();
         }
 
         /**
