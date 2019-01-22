@@ -7,7 +7,7 @@
 
     angular.module("paysense", ["ngAnimate", "ngFx", "ngSanitize"])
         .constant("Constants", {
-            endpoint: "https://paysense.mybluemix.net",
+            endpoint: "https://paysense.herokuapp.com",
             local_endpoint: "http://localhost:1337"
         })
         .controller("MainController", MainController);
@@ -15,7 +15,8 @@
     MainController.$inject = ["$timeout", "$http", "$location", "$anchorScroll", "Constants"];
     function MainController($timeout, $http, $location, $anchorScroll, Constants) {
         var vm = this;
-        var endpoint = Constants.local_endpoint;
+      // var endpoint = Constants.local_endpoint;
+        var endpoint = Constants.endpoint;
 
         var audio = new Audio();
         audio.addEventListener('canplaythrough', function () {
