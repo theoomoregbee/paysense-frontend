@@ -46,7 +46,7 @@
          * @type {{text_to_speech: boolean}}
          */
         vm.settings = {
-            text_to_speech: true
+            text_to_speech: false
         };
 
 
