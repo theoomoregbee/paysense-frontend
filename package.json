@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "wiredep": "wiredep --verbose --bowerJson bower.json --src index.html",
+    "heroku-postbuild":"npm run wiredep",
     "start":"node web.js"
   },
   "repository": {
