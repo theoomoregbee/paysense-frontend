@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "wiredep": "wiredep --verbose --bowerJson bower.json --src index.html",
-    "heroku-postbuild":"npm run wiredep",
-    "start":"node web.js"
+    "heroku-postbuild": "npm run wiredep",
+    "start": "node web.js"
   },
   "repository": {
     "type": "git",
@@ -15,7 +15,7 @@
   },
   "engines": {
     "npm": "6.x",
-    "node":"6"
+    "node": "6"
   },
   "keywords": [
     "ai",
@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "angular-mocks": "^1.6.1",
-    "gulp": "git+https://git@github.com/gulpjs/gulp.git#4.0",
+    "gulp": "git+https://git@github.com/gulpjs/gulp.git",
     "gulp-jshint": "^2.0.2",
     "gulp-webserver": "^0.9.1",
     "jasmine-core": "^2.5.2",
